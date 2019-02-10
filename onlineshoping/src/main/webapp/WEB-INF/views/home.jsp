@@ -24,13 +24,13 @@
             </ol>
             <div class="carousel-inner" role="listbox">
               <div class="carousel-item active">
-                <img class="d-block img-fluid" src="${images}/honor.jpg" alt="First slide" width="900" height="350">
+                <img class="d-block img-fluid" src="${images}/honor.jpg" alt="First slide" width="100" height="150">
               </div>
               <div class="carousel-item">
-                <img class="d-block img-fluid" src="${images }/temptation.jpg" alt="Second slide" width="900" height="350">
+                <img class="d-block img-fluid" src="${images }/temptation.jpg" alt="Second slide" width="100" height="150">
               </div>
               <div class="carousel-item">
-                <img class="d-block img-fluid" src="${ images}/petta.jpg" alt="Third slide" width="900" height="350">
+                <img class="d-block img-fluid" src="${ images}/petta.jpg" alt="Third slide" width="100" height="150">
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

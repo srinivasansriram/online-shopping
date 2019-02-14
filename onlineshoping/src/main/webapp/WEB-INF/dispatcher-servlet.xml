@@ -12,6 +12,9 @@ xmlns:mvc="http://www.springframework.org/schema/mvc"
   
    <context:component-scan base-package="com.srini.onlineshoping.controller"/>
    
+   <context:component-scan base-package="com.srini.shopingbackend.daoimpl"/>
+   
+   
    <bean id="viewResolver"
    class="org.springframework.web.servlet.view.InternalResourceViewResolver">
    

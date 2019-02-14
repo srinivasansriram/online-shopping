@@ -21,7 +21,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>Online Shopping - ${tite} }</title>
+<title>Online Shopping - ${tite}</title>
 <script>
 	window.menu = '${title}';
 </script>
@@ -60,19 +60,20 @@
 				<a class="navbar-brand" href="#"><b> Online shopping </b></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse"
 					data-target="#navbarResponsive" aria-controls="navbarResponsive"
- 					aria-expanded="false" aria-label="Toggle navigation">
+					aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarResponsive">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item active"><a class="nav-link"
-							href="${pageContext.request.contextPath}/addprodpage">Add
+							href="${pageContext.request.contextPath}/show/all/products">show
 								Products </a></li>
-						<li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath }/about">About</a></li>
+						<li class="nav-item"><a class="nav-link"
+							href="${pageContext.request.contextPath }/about">About</a></li>
 						<li class="nav-item"><a class="nav-link" href="#">Services</a>
 						</li>
-						<li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/contact">Contact</a>
-						</li>
+						<li class="nav-item"><a class="nav-link"
+							href="${pageContext.request.contextPath}/contact">Contact</a></li>
 					</ul>
 				</div>
 			</div>
@@ -89,11 +90,14 @@
 			<c:if test="${userClickAbout == true }">
 				<%@include file="about.jsp"%>
 			</c:if>
-
-			<!-- load only when user clicks contact -->
 			
+			<!-- load only when user clicks contact -->
+
 			<c:if test="${userClickContact == true }">
 				<%@include file="contact.jsp"%>
+			</c:if>
+			<c:if test="${userClickAllProducts == true or userClickCategoryProducts == true }">
+				<%@include file="listProducts.jsp"%>
 			</c:if>
 
 		</div>

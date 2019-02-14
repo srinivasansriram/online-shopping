@@ -23,7 +23,7 @@
 					<a href="${contextRoot}/contact">Contact</a>
                    
                     <li id="listproducts">
-                        <a href="${contextRoot}/listproducts">View Products</a>
+                        <a href="${contextRoot}/show/all/products">View Products</a>
                     </li>
 					<security:authorize access="hasAuthority('ADMIN')">
 	                    <li id="manageProduct">

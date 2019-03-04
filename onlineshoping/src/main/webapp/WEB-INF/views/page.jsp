@@ -24,12 +24,13 @@
 <title>Online Shopping - ${title}</title>
 <script>
 	window.menu = '${title}';
+	window.contextRoot ='${contextRoot}'
 </script>
 
 <!-- Bootstrap core CSS -->
 <link href="${css}/bootstrap.min.css" rel="stylesheet">
 <!-- Bootstrap readable theme -->
-<link href="${css}/bootstrap-readable-theme.css" rel="stylesheet">
+<link href="${css}/dataTables.bootstrap.css" rel="stylesheet">
 
 <!-- Custom styles for this template -->
 <link href="${css}/myapp.css" rel="stylesheet">
@@ -117,6 +118,10 @@
 		<script src="${js}/bootstrap.min.js"></script>
 		<!--  data table -->
 		<script src="${js}/jquery.dataTables.js "></script>
+		
+		<!--  data table bootstrap js -->
+		
+		<script src="${js}/dataTables.bootstrap.js "></script>
 
 		<!-- Self coded javascript -->
 		<script src="${js}/myapp.js"></script>

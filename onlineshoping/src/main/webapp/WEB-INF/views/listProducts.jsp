@@ -19,6 +19,11 @@
 			<div class="row">
 				<div class="col-md-12">
 					<c:if test="${userClickAllProducts == true }">
+					
+					<script>
+					window.categoryId = '';
+					
+					</script>
 
 						<ol class="breadcrumb">
 
@@ -30,6 +35,11 @@
 					
 					
 					<c:if test="${userClickCategoryProducts == true }">
+					
+					<script>
+					window.categoryId ='${category.id}';
+					
+					</script>
 
 						<ol class="breadcrumb">
 
@@ -49,11 +59,30 @@
 			
 			<thead>
 			<tr>
-			<th>ID</th>
+			<th></th>
 			<th>Name</th>
+			<th>Brand</th>
+			<th>Price</th>
+			<th>Quantity.available</th>
+			<th></th>
+			
 			</tr>
 			
 			</thead>
+			
+			<tfoot>
+			<tr>
+			<th></th>
+			<th>Name</th>
+			<th>Brand</th>
+			<th>Price</th>
+			<th>Quantity.available</th>
+			<th></th>
+			
+			</tr>
+			
+			</tfoot>
+			
 			
 			</table>
 			

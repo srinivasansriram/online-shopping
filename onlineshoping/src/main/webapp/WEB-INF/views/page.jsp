@@ -21,7 +21,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>Online Shopping - ${tite}</title>
+<title>Online Shopping - ${title}</title>
 <script>
 	window.menu = '${title}';
 </script>
@@ -115,6 +115,8 @@
 		<script src="${js}/jquery.js"></script>
 		<!-- Bootstrap core JavaScript -->
 		<script src="${js}/bootstrap.min.js"></script>
+		<!--  data table -->
+		<script src="${js}/jquery.dataTables.js "></script>
 
 		<!-- Self coded javascript -->
 		<script src="${js}/myapp.js"></script>
